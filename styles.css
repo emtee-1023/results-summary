@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 0px 0px 30px 30px;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+}
+
+.your-result {
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 0.674);
+    text-align: center;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.main-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 0;
+    padding-top: 5px;   
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.actual-score {
+    margin: 0;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+}
+
+.total-score {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: hsla(0, 0%, 100%, 0.502);
+}
+
+.remark {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.tagline {
+    color: hsla(0, 0%, 100%, 0.674);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0px 25px;
+}
+
+.summary-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    padding: 40px 15px 15px 15px;
+    gap: 30px;
+}
+
+.summary {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 0px;
+}
+
+.placeholder {
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 10px;
+
+}
+
+
+.placeholder.reaction {
+    background: hsla(0, 100%, 67%, 0.073);
+    color: hsl(0, 100%, 67%);
+
+}
+
+.placeholder.memory {
+    background: hsla(39, 100%, 56%, 0.073);
+    color: hsl(39, 100%, 56%);
+
+}
+
+.placeholder.verbal {
+    background: hsla(166, 100%, 37%, 0.073);
+    color: hsl(166, 100%, 37%);
+
+}
+
+.placeholder.visual {
+    background: hsla(234, 85%, 45%, 0.073);
+    color: hsl(234, 85%, 45%);
+}
+
+.placeholder .definition {
+    margin-left: 7px;
+    flex-grow: 1;
+}
+
+.placeholder .score {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.placeholder .total {
+    color: hsla(224, 30%, 27%, 0.489);
+    margin-left: 5px;
+    font-weight: 800;
+}
+
+.continue {
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.continue:hover {
+    background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    cursor: url('assets/images/cursor.cur'), pointer;
+}
+
+/*RESPONSIVENESS! */
+@media only screen and (min-width: 770px) and (max-width:1079px){
+    .container {
+        flex-direction: row;
+        width: 80vw;
+        height: 450px;
+        margin: 65px auto;
+        border-radius: 30px;
+        box-shadow: 10px 10px 20px hsla(234, 85%, 45%, 0.231);
+
+    }
+
+    .main-section {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .summary-section {
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        padding: 30px;
+
+    
+  }
+
+}
+
+@media only screen and (min-width: 1080px){
+    .container{
+        flex-direction: row;
+        width: 70vw;
+        height: 450px;
+        margin: 65px auto;
+        border-radius: 30px;
+        box-shadow: 10px 10px 20px hsla(234, 85%, 45%, 0.231);
+    }
+
+    .main-section {
+        border-radius: 30px;
+        height: 100%;
+    }
+
+    .summary-section {
+        border-radius: 30px;
+        padding: 30px;
+        gap: 20px;
+    
+  }
+
+    
+}
