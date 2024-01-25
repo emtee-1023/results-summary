@@ -170,10 +170,20 @@ body {
 }
 
 /*RESPONSIVENESS! */
-@media only screen and (min-width: 770px) and (max-width:1079px){
+@media only screen and (min-width: 450px) and (max-width:700px){
+    .container {
+        width: 475px;
+        margin: 0 auto;
+        border-radius: 30px;
+        box-shadow: 10px 10px 20px hsla(234, 85%, 45%, 0.231);
+
+    }
+}
+
+@media only screen and (min-width: 700px) {
     .container {
         flex-direction: row;
-        width: 80vw;
+        width: 760px;
         height: 450px;
         margin: 65px auto;
         border-radius: 30px;
@@ -183,43 +193,14 @@ body {
 
     .main-section {
         border-radius: 30px;
-        width: 100%;
         height: 100%;
     }
 
     .summary-section {
         border-radius: 30px;
-        width: 100%;
-        height: 100%;
         gap: 20px;
         padding: 30px;
-
-    
   }
 
 }
 
-@media only screen and (min-width: 1080px){
-    .container{
-        flex-direction: row;
-        width: 70vw;
-        height: 450px;
-        margin: 65px auto;
-        border-radius: 30px;
-        box-shadow: 10px 10px 20px hsla(234, 85%, 45%, 0.231);
-    }
-
-    .main-section {
-        border-radius: 30px;
-        height: 100%;
-    }
-
-    .summary-section {
-        border-radius: 30px;
-        padding: 30px;
-        gap: 20px;
-    
-  }
-
-    
-}
