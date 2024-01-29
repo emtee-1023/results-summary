@@ -183,7 +183,7 @@ body {
     .container {
         flex-direction: row;
         min-width: 700px;
-        height: 450px;
+        height: 500px;
         min-height: 0;
         margin: 65px auto;
         border-radius: 30px;
